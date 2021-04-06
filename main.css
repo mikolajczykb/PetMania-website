@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*
+#logo {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#logo > * {
+    background-color: white;
+    border-radius: 50%;
+}
+
+#front {
+    width: 35%;
+    height: 50%;
+    z-index: 2;
+}
+
+#left_ear {
+    width: 20%;
+    height: 30%;
+    background-color: gray;
+    position: relative;
+    left: -42%;
+    top: -18%;
+}
+
+#right_ear {
+    width: 20%;
+    height: 30%;
+    background-color: gray;
+    position: relative;
+    left: -33%;
+    top: -18%;
+}
+
+#left_earlobe {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    top: 25%;
+}
+
+#right_earlobe {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+    top: 25%;
+}
+
+#front > * {
+    background-color: black;
+    border-radius: 50%;
+}
+
+#left_eye {
+    width: 15%;
+    height: 20%;
+    position: relative;
+    top: 20%;
+    left: 15%;
+}
+
+#right_eye {
+    width: 15%;
+    height: 20%;
+    position: relative;
+    left: 70%;
+}
+
+
+#left_eye:after {
+    content: "";
+    background-color: white;
+    
+}*/
+
+header > * {
+    flex-shrink: 2;
+}
+
+header > img {
+    width: calc(min(15vw, 14vh));
+    position: relative;
+    left: -15%;
+}
+
+
+#webpagename {
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.0vw;
+    position: absolute;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15%;
+}
+
+nav > a {
+    font-size: 1.2vw;
+    margin: 0 10% 0 10%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a.hover-shine {
+    transition: .8s ease;
+}
+
+a.hover-shine:hover {
+    transition: .8s ease;
+    text-shadow: 0px 0px 18px #FFFFFF;
+}
+
+#customer_count {
+    top: 20%;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 150%;
+    }
+}
+
+.gradient-background {
+    background: 
+        repeating-radial-gradient(
+        circle at 200% 200%, 
+        white,
+        rgba(245, 240, 240, 1.0) 50px
+        );
+    animation: gradient-animation 12s ease-in-out infinite alternate;
+}
+
+.info-text {
+    font-size: calc(min(3.0vw, 5.0vh));
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#animated_count {
+    font-size: 5.5vw;
+    font-weight: 900;
+}
+
+.company-info-display {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-2r-2c {
+    width: 80%;
+    height: 50%;
+    display: grid;
+    
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.heading-text {
+    font-size: 4.0vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+}
+
+.info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 9% 5% 9%;
+}
+
+.info > * {
+    text-align: center;
+}
+
+i {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {   
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer > img {
+    width: 5%;
+    height: 5%;
+    margin-left: 25%;
+}
+
+#footertext {
+    margin-left: 25%;
+}
